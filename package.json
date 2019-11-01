@@ -1,0 +1,35 @@
+{
+  "name": "kloudless-event-explorer",
+  "version": "1.0.0",
+  "description": "Event expolrer for Kloudless linked folders",
+  "scripts": {
+    "babel-node": "babel-node",
+    "start": "nodemon -e js -w ./src --inspect --exec npm run babel-node -- ./src | pino-pretty -l -t 'SYS:HH:MM:ss.l'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Petar-np/kloudless-event-explorer.git"
+  },
+  "author": "Petar Popovic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Petar-np/kloudless-event-explorer/issues"
+  },
+  "homepage": "https://github.com/Petar-np/kloudless-event-explorer#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "nodemon": "^1.19.4",
+    "pino-pretty": "^3.2.2"
+  },
+  "dependencies": {
+    "dotenv-safe": "^8.1.0",
+    "express": "^4.17.1",
+    "got": "^9.6.0"
+  }
+}
